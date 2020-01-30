@@ -8,21 +8,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>AHCH Information Management System</title>
+  <title>Simple Sidebar - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Fullcalendar CSS -->
-  <link href='node_modules/@fullcalendar/core/main.css' rel='stylesheet' />
-  <link href='node_modules/@fullcalendar/daygrid/main.css' rel='stylesheet' />
-
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
-
-  <!-- Fullcalender JS -->
-  <script src='node_modules/@fullcalendar/core/main.js'></script>
-  <script src='node_modules/@fullcalendar/daygrid/main.js'></script>
 
 </head>
 
@@ -57,11 +49,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="cases.html">Cases <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Cases <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="admin.html">Admin <span class="sr-only">(current)</span></a>
@@ -85,69 +77,11 @@
         </div>
       </nav>
 
-      <!-- <div class="container-fluid">
-         <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on
-          larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional,
-          and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the
-          menu when clicked.</p>
-      </div> -->
-
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Case ID #</th>
-                  <th scope="col">Family Name</th>
-                  <th scope="col">NJ Spirit #</th>
-                  <th scope="col">Date Created</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">10451</th>
-                  <td>Smith</td>
-                  <td>274628</td>
-                  <td>12/28/2019</td>
-                </tr>
-                <tr>
-                  <th scope="row">10452</th>
-                  <td>Jackson</td>
-                  <td>583657</td>
-                  <td>12/29/2019</td>
-                </tr>
-                <tr>
-                  <th scope="row">10450</th>
-                  <td>Jeff</td>
-                  <td>204618</td>
-                  <td>12/27/2019</td>
-                </tr>
-                <tr>
-                  <th scope="row">10449</th>
-                  <td>Howard</td>
-                  <td>285637</td>
-                  <td>12/22/2019</td>
-                </tr>
-                <tr>
-                  <th scope="row">10448</th>
-                  <td>Hollins</td>
-                  <td>385751</td>
-                  <td>12/20/2019</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-md">
-            <div id='calendar'></div>
-          </div>
-        </div>
-      </div>
-
-
+      <!-- ---------------------------- -->
+      <!-- ---------------------------- -->
+      <!-- INSERT ALL PAGE CONTENT HERE -->
+      <!-- ---------------------------- -->
+      <!-- ---------------------------- -->
 
 
     </div>
@@ -166,20 +100,6 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-  </script>
-
-  <!-- Fullcalendar Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        plugins: ['dayGrid']
-      });
-
-      calendar.render();
-    });
-
   </script>
 
 </body>
