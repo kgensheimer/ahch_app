@@ -10,7 +10,7 @@
   {{!-- Custom styles --}}
   <link rel='stylesheet' href='/stylesheets/style.css' />
   {{#each stylesheets}}
-  <link rel='stylesheet' href='{{stylesheet}}'/>
+  <link rel='stylesheet' href='{{stylesheet}}' />
   {{/each}}
 
 </head>
@@ -36,7 +36,7 @@
           <a class="nav-link" href="/admin">Admin <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/">Add Case <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/addcase">Add Case <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -44,12 +44,18 @@
             Settings
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action 1</a>
-            <a class="dropdown-item" href="#">Action 2</a>
+            <a class="dropdown-item" href="/">Action 1</a>
+            <a class="dropdown-item" href="/">Action 2</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Action 3</a>
+            <a class="dropdown-item" href="/">Action 3</a>
           </div>
         </li>
+        {{!-- Search Bar --}}
+        <form class="form-inline">
+          <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
       </ul>
     </div>
   </nav>
