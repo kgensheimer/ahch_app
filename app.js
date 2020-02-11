@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var adminRouter = require('./routes/admin');
+var addcaseRouter = require('./routes/addcase');
+var casesRouter = require('./routes/cases');
 
 var app = express();
 
@@ -13,37 +15,19 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-// testing view engine setup (handlebars) with helper for script seciton of template/layout
-// var hbs = exphbs.create({
-//   defaultLayout: "main",
-//   extname: ".hbs",
-//   helpers: {
-//     section: function(name, options) { 
-//       if (!this._sections) this._sections = {};
-//         this._sections[name] = options.fn(this); 
-//         return null;
-//       }
-//   }    
-// });
-// app.engine('hbs', hbs.engine);
-// app.set('view engine', '.hbs');
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//
+// redirecting node modules to static folder
 app.use('/modules', express.static(path.join(__dirname, 'node_modules')))
-
-// app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap')); // redirect bootstrap 
-// app.use('/jquery', express.static(__dirname + '/node_modules/jquery')); // redirect JS jQuery
-
-// app.use('/@fullcalendar', express.static(__dirname + '/node_modules/@fullcalendar'));
 
 app.use('/', indexRouter);
 app.use('/admin', adminRouter);
+app.use('/addcase', addcaseRouter);
+app.use('/cases', casesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

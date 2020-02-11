@@ -1,3 +1,56 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<div id='calendar'></div>
+<div class="d-flex" id="wrapper">
+    {{!-- <h1>{{title}}</h1>
+    <p>Welcome to {{title}}</p> --}}
+
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <div class="col-md">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Case ID #</th>
+                            <th scope="col">Family Name</th>
+                            <th scope="col">NJ Spirit #</th>
+                            <th scope="col">Date Created</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">10451</th>
+                            <td>Smith</td>
+                            <td>274628</td>
+                            <td>12/28/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10452</th>
+                            <td>Jackson</td>
+                            <td>583657</td>
+                            <td>12/29/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10450</th>
+                            <td>Jeff</td>
+                            <td>204618</td>
+                            <td>12/27/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10449</th>
+                            <td>Howard</td>
+                            <td>285637</td>
+                            <td>12/22/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10448</th>
+                            <td>Hollins</td>
+                            <td>385751</td>
+                            <td>12/20/2019</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md">
+                <div id='calendar'></div>
+            </div>
+        </div>
+    </div>
+</div>

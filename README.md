@@ -44,7 +44,7 @@ See also the list of [contributors](https://github.com/kgensheimer/ahch_app/grap
 
 ## License
 
-No license now.
+MIT
 
 ## Acknowledgments
 
