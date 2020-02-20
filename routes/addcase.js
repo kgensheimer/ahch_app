@@ -3,7 +3,8 @@ var router = express.Router();
 
 // stylesheets sent to layout.hbs
 var stylesheets = [
-    { stylesheet: '/stylesheets/simple-sidebar.css' }];
+  { stylesheet: '/stylesheets/simple-sidebar.css' }];
+
 
 /* GET addcase page */
 router.get('/', function(req, res, next) {
