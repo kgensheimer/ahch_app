@@ -9,6 +9,7 @@
 
   {{!-- Custom styles --}}
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  {{!-- Custom styles sent by routers --}}
   {{#each stylesheets}}
   <link rel='stylesheet' href='{{stylesheet}}' />
   {{/each}}
@@ -16,6 +17,7 @@
 </head>
 
 <body>
+  {{!-- fixed-top --}}
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <a class="navbar-brand" href="/">AHCH</a>
 
@@ -66,7 +68,7 @@
   <script src="/modules/jquery/dist/jquery.min.js"></script>
   <script src="/modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-  {{!-- Custom scripts --}}
+  {{!-- Custom scripts sent by routers --}}
   {{#each scripts}}
   <script src="{{script}}"></script>
   {{/each}}

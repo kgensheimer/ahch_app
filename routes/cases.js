@@ -4,7 +4,7 @@ var router = express.Router();
 var stylesheets = [
   { stylesheet: '/stylesheets/simple-sidebar.css' }];
 
-/* GET admin page */
+/* GET cases page */
 router.get('/', function (req, res, next) {
   res.render('cases', {
     stylesheets: stylesheets
