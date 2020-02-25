@@ -1,133 +1,131 @@
 <div class="container-fluid" style="margin: 5px;">
 
-    <div style="background:transparent !important" class="justify-content-center text-center">
-        <h2>Audrey Hepburn Children's House</h2>
-    </div>
+    <div class="container-fluid" style="margin: 30px;">
 
-
-    <div class="row">
-
-        {{!-- Cases Table --}}
-        <div class="col-md">
-            <table style="overflow-y: auto;" class="table table-hover" id="caseTableHome">
-                <thead>
-                    <tr>
-                        <th scope="col">Case ID #</th>
-                        <th scope="col">Family Name</th>
-                        <th scope="col">NJ Spirit #</th>
-                        <th scope="col">Date Created</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">10451</th>
-                        <td>Smith</td>
-                        <td>274628</td>
-                        <td>12/28/2019</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10452</th>
-                        <td>Jackson</td>
-                        <td>583657</td>
-                        <td>12/29/2019</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10450</th>
-                        <td>Jeffrey</td>
-                        <td>204618</td>
-                        <td>12/27/2019</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10449</th>
-                        <td>Howard</td>
-                        <td>285637</td>
-                        <td>12/22/2019</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10448</th>
-                        <td>Hollins</td>
-                        <td>385751</td>
-                        <td>12/20/2019</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10451</th>
-                        <td>Johnson</td>
-                        <td>674328</td>
-                        <td>11/28/2019</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10452</th>
-                        <td>Peters</td>
-                        <td>283557</td>
-                        <td>1/2/2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10450</th>
-                        <td>Kelce</td>
-                        <td>304518</td>
-                        <td>1/4/2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10449</th>
-                        <td>Mathis</td>
-                        <td>685637</td>
-                        <td>1/7/2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10448</th>
-                        <td>Barnett</td>
-                        <td>985751</td>
-                        <td>1/9/2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10451</th>
-                        <td>Wilson</td>
-                        <td>564635</td>
-                        <td>1/12/2019</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10452</th>
-                        <td>Elliot</td>
-                        <td>684357</td>
-                        <td>1/13/2019</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10450</th>
-                        <td>Graham</td>
-                        <td>948576</td>
-                        <td>1/20/2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10449</th>
-                        <td>James</td>
-                        <td>876637</td>
-                        <td>1/22/2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10448</th>
-                        <td>Joseph</td>
-                        <td>345751</td>
-                        <td>1/26/2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10449</th>
-                        <td>Bradley</td>
-                        <td>873347</td>
-                        <td>1/29/2020</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10448</th>
-                        <td>Scott</td>
-                        <td>333751</td>
-                        <td>1/31/2020</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div style="background:transparent !important; margin-bottom: 80px; margin-top: 20px;" class="justify-content-center text-center">
+            <h1>Children's House Information Management System</h1>
         </div>
 
-        {{!-- Calendar --}}
-        <div class="col-md">
-            <div id='calendar'></div>
+        <div class="row">
+            <div class="col-md" style="margin-left: 10px; margin-right: 10px">
+                <table style="overflow-y: auto;" class="table table-hover" id="caseIdTable">
+                    <thead style="background-color: #C0B7E5;">
+                        <tr>
+                            <th scope="col">Case ID #</th>
+                            <th scope="col">Family Name</th>
+                            <th scope="col">NJ Spirit #</th>
+                            <th scope="col">Date Created</th>
+                        </tr>
+                    </thead>
+                    <tbody style="background-color: #D5CCFF;">
+                        <tr>
+                            <th scope="row">10451</th>
+                            <td>Smith</td>
+                            <td>274628</td>
+                            <td>12/28/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10452</th>
+                            <td>Jackson</td>
+                            <td>583657</td>
+                            <td>12/29/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10450</th>
+                            <td>Jeffrey</td>
+                            <td>204618</td>
+                            <td>12/27/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10449</th>
+                            <td>Howard</td>
+                            <td>285637</td>
+                            <td>12/22/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10448</th>
+                            <td>Hollins</td>
+                            <td>385751</td>
+                            <td>12/20/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10451</th>
+                            <td>Johnson</td>
+                            <td>674328</td>
+                            <td>11/28/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10452</th>
+                            <td>Peters</td>
+                            <td>283557</td>
+                            <td>1/2/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10450</th>
+                            <td>Kelce</td>
+                            <td>304518</td>
+                            <td>1/4/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10449</th>
+                            <td>Mathis</td>
+                            <td>685637</td>
+                            <td>1/7/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10448</th>
+                            <td>Barnett</td>
+                            <td>985751</td>
+                            <td>1/9/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10451</th>
+                            <td>Wilson</td>
+                            <td>564635</td>
+                            <td>1/12/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10452</th>
+                            <td>Elliot</td>
+                            <td>684357</td>
+                            <td>1/13/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10450</th>
+                            <td>Graham</td>
+                            <td>948576</td>
+                            <td>1/20/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10449</th>
+                            <td>James</td>
+                            <td>876637</td>
+                            <td>1/22/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10448</th>
+                            <td>Joseph</td>
+                            <td>345751</td>
+                            <td>1/26/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10449</th>
+                            <td>Bradley</td>
+                            <td>873347</td>
+                            <td>1/29/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10448</th>
+                            <td>Scott</td>
+                            <td>333751</td>
+                            <td>1/31/2020</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md" style="margin-left: 10px; margin-right: 10px">
+                <div id='calendar' style="padding: 2%"></div>
+            </div>
         </div>
 
 
