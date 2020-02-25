@@ -22,13 +22,22 @@ h4 {
   line-height: 65px;
 }
 
-  
-body, p, label {
+p, label {
   font-family: 'Vollkorn', Georgia, Times, serif;
   font-size: 20px;
   line-height: 25px;
   background-color: #F0DBFF;
 }
+
+body {
+  /* padding: 50px; */
+  font-family: 'Vollkorn', Georgia, Times, serif;
+  font-size: 20px;
+  line-height: 25px;
+  background-color: #F0DBFF;
+  padding-top: 50px;
+}
+  
 
 a {
   color: #00B7FF;
