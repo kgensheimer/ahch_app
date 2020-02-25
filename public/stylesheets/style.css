@@ -1,8 +1,33 @@
-body {
-  /* padding: 50px; */
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #F0E9F6;
+h1 {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  line-height: 65px;
+}
+
+h2 {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  line-height: 65px;
+}
+
+h3 {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  line-height: 65px;
+}
+
+h4 {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  line-height: 65px;
+}
+
   
+body, p, label {
+  font-family: 'Vollkorn', Georgia, Times, serif;
+  font-size: 20px;
+  line-height: 25px;
+  background-color: #F0DBFF;
 }
 
 a {
