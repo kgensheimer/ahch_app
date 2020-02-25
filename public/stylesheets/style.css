@@ -2,6 +2,7 @@ h1 {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   font-size: 50px;
   line-height: 65px;
+  text-shadow: 1px 1px 1px #ccc;
 }
 
 h2 {
@@ -27,7 +28,7 @@ p, label {
   font-family: 'Vollkorn', Georgia, Times, serif;
   font-size: 20px;
   line-height: 25px;
-  background-color: #F0DBFF;
+  /* background-color: #F0DBFF; */
 }
 
 body {
