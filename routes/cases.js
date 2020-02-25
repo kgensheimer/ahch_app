@@ -1,79 +1,76 @@
 var express = require('express');
 var router = express.Router();
 
-var stylesheets = [
-  { stylesheet: '/stylesheets/simple-sidebar.css' }];
-
 /* GET cases page */
 router.get('/', function (req, res, next) {
   res.render('cases', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/referral', function (req, res, next) {
   res.render('cases/referral', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/patients', function (req, res, next) {
   res.render('cases/patients', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/medical', function (req, res, next) {
   res.render('cases/medical', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/family', function (req, res, next) {
   res.render('cases/family', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/history', function (req, res, next) {
   res.render('cases/family', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/services', function (req, res, next) {
   res.render('cases/services', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/staff', function (req, res, next) {
   res.render('cases/staff', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/mentalhealth', function (req, res, next) {
   res.render('cases/mentalhealth', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/recommendation', function (req, res, next) {
   res.render('cases/recommendation', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/familyrecommendation', function (req, res, next) {
   res.render('cases/familyrecommendation', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
 router.get('/notes', function (req, res, next) {
   res.render('cases/notes', {
-    stylesheets: stylesheets
+    layout: 'caseslayout'
   });
 });
 
