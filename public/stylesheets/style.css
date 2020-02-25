@@ -7,19 +7,20 @@ h1 {
 h2 {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   font-size: 40px;
-  line-height: 65px;
+  line-height: 55px;
 }
 
 h3 {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   font-size: 35px;
-  line-height: 65px;
+  line-height: 45px;
 }
 
 h4 {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-family: 'Vollkorn', Georgia, Times, serif;
   font-size: 25px;
-  line-height: 65px;
+  line-height: 35px;
+  font-weight: 800;
 }
 
 p, label {
@@ -34,7 +35,7 @@ body {
   font-family: 'Vollkorn', Georgia, Times, serif;
   font-size: 20px;
   line-height: 25px;
-  background-color: #F0DBFF;
+  background: url(/images/pink_rice.png) repeat 0 0;
   padding-top: 50px;
 }
   
