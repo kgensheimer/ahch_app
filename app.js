@@ -1,20 +1,12 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var hbs = require('express-handlebars');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const hbs = require('express-handlebars');
+const configRoutes = require("./routes");
 
-/*
-Routing file setup:
-After creating a new routing file, it must be required here
-*/
-var indexRouter = require('./routes/index');
-var adminRouter = require('./routes/admin');
-var addcaseRouter = require('./routes/addcase');
-var casesRouter = require('./routes/cases');
-
-var app = express();
+const app = express();
 
 // View engine setup
 app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts'}));
@@ -30,14 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Redirecting node modules to static folder
 app.use('/modules', express.static(path.join(__dirname, 'node_modules')))
 
-/*
-  Routing file setup:
-  Each router added above mut be used by the app, with the respective name of the route
-*/
-app.use('/', indexRouter);
-app.use('/admin', adminRouter);
-app.use('/addcase', addcaseRouter);
-app.use('/cases', casesRouter);
+// Configuring routes from method exported from routes/index.js
+configRoutes(app);
 
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {

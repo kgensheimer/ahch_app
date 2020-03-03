@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 /* GET cases page */
 router.get('/', function (req, res, next) {
-  res.render('cases', {
+  res.render('cases/case', {
     layout: 'caseslayout'
   });
 });
@@ -33,7 +33,7 @@ router.get('/family', function (req, res, next) {
 });
 
 router.get('/history', function (req, res, next) {
-  res.render('cases/family', {
+  res.render('cases/history', {
     layout: 'caseslayout'
   });
 });

@@ -1,424 +1,422 @@
-<div class="d-flex" id="wrapper">
-
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="list-group list-group-flush">
-            {{!-- TODO: Snap to Sections --}}
-            <a href="#section1" class="list-group-item list-group-item-action bg-light">Section I</a>
-            <a href="#section2" class="list-group-item list-group-item-action bg-light">Section II</a>
-            <a href="#section3" class="list-group-item list-group-item-action bg-light">Section III</a>
-            <a href="#section4" class="list-group-item list-group-item-action bg-light">Section IV</a>
-            <a href="#section5" class="list-group-item list-group-item-action bg-light">Section V</a>
-        </div>
+<!-- Sidebar -->
+<div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="list-group list-group-flush">
+        {{!-- TODO: Snap to Sections --}}
+        <a href="#section1" class="list-group-item list-group-item-action bg-light">Section I</a>
+        <a href="#section2" class="list-group-item list-group-item-action bg-light">Section II</a>
+        <a href="#section3" class="list-group-item list-group-item-action bg-light">Section III</a>
+        <a href="#section4" class="list-group-item list-group-item-action bg-light">Section IV</a>
+        <a href="#section5" class="list-group-item list-group-item-action bg-light">Section V</a>
     </div>
-    <!-- /#sidebar-wrapper -->
+</div>
+<!-- /#sidebar-wrapper -->
 
-    <!-- Page Content -->
-
-
-    <div class="container-fluid" id="page-content-wrapper">
-
-        <div class="row justify-content-center" style="margin-top: 10px;" id="section1">
-            <h4>Intake Form</h4>
-        </div>
+<!-- Page Content -->
 
 
+<div class="container" id="page-content-wrapper">
 
-        {{!-- TODO: Figure out how to center this, add required fields --}}
-        <div class='input-form justify-content-center needs-validation' novalidate>
-            <form>
-                <div class="form-group row">
-                    <label for="inputFamilyName" class="col-sm-2 col-form-label">Family Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control  form-control-sm" id="inputFamilyName">
+    <div class="row justify-content-center" id="section1">
+        <h4>Intake Form</h4>
+    </div>
+
+
+
+    {{!-- TODO: Figure out how to center this, add required fields --}}
+    <div class='input-form justify-content-center needs-validation' novalidate>
+        <form>
+            <div class="form-group row">
+                <label for="inputFamilyName" class="col-sm-2 col-form-label">Family Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control  form-control-sm" id="inputFamilyName">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputSecondaryFamilyName" class="col-sm-2 col-form-label">Secondary Family Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control  form-control-sm" id="inputSecondaryFamilyName">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputNJSpiritNum" class="col-sm-2 col-form-label">NJ Spirit Number</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control  form-control-sm" id="inputNJSpiritNum">
+                </div>
+            </div>
+
+            <div class="border-top my-3"></div>
+
+            <div class="row justify-content-center">
+                <h4>Attachments</h4>
+            </div>
+
+
+            <div class="input-group mb-3 input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01">
+                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+            </div>
+
+            {{!-- TODO: Add Additional Default Attachments --}}
+
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-secondary btn-sm">Add Additional Attachment</button>
+            </div>
+
+            <div class="border-top my-3"></div>
+
+            <div class="row justify-content-center">
+                <h4>Section I</h4>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputPatientName" class="col-sm-2 col-form-label">Patient Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control  form-control-sm" id="inputPatientName">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputDateOfLastAbuseContact" class="col-sm-2 col-form-label">Date of Last
+                    Abuse/Contact</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control form-control-sm" id="inputDateOfLastAbuseContact">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmergency" class="col-sm-2 col-form-label">Emergency</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="Yes">
+                        <label class="form-check-label" for="inputEmergencyYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="No">
+                        <label class="form-check-label" for="inputEmergencyNo">No</label>
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="inputSecondaryFamilyName" class="col-sm-2 col-form-label">Secondary Family Name</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control  form-control-sm" id="inputSecondaryFamilyName">
+            </div>
+
+            <div class="form-group row">
+                <label for="inputPatientStatus" class="col-sm-2 col-form-label">Status</label>
+                <div class="col-sm-10">
+                    <select class="form-control form-control-sm">
+                        <option>Option1</option>
+                        <option>Option2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputDateOfLastAbuseContact" class="col-sm-2 col-form-label">Today's Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control  form-control-sm" id="inputDateToday">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmergency" class="col-sm-2 col-form-label">Type of Abuse</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Neglect">
+                        <label class="form-check-label" for="inlineCheckbox1">Neglect</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Sexual Abuse">
+                        <label class="form-check-label" for="inlineCheckbox2">Sexual Abuse</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                            value="Institutional Abuse">
+                        <label class="form-check-label" for="inlineCheckbox3">Institutional Abuse</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Physical Abuse">
+                        <label class="form-check-label" for="inlineCheckbox4">Physical Abuse</label>
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="inputNJSpiritNum" class="col-sm-2 col-form-label">NJ Spirit Number</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control  form-control-sm" id="inputNJSpiritNum">
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmergency" class="col-sm-2 col-form-label">Evaluations Request</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Psychological">
+                        <label class="form-check-label" for="inlineCheckbox1">Psychological</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Forensic">
+                        <label class="form-check-label" for="inlineCheckbox2">Forensic</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Medical">
+                        <label class="form-check-label" for="inlineCheckbox3">Medical</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Parenting">
+                        <label class="form-check-label" for="inlineCheckbox4">Parenting</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Neuropsychological">
+                        <label class="form-check-label" for="inlineCheckbox5">Neuropsychological</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-sm">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Medical Consult">
+                        <label class="form-check-label" for="inlineCheckbox6">Medical Consult</label>
                     </div>
                 </div>
+            </div>
 
-                <div class="border-top my-3"></div>
 
-                <div class="row justify-content-center">
-                    <h4>Attachments</h4>
+            <div class="border-top my-3"></div>
+
+
+            <div class="form-group row">
+                <label for="inputCaseWorkerName" class="col-sm-2 col-form-label">Case Worker Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control  form-control-sm" id="inputCaseWorkerName">
                 </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputCaseWorkerPhone" class="col-sm-2 col-form-label">Case Worker Phone #</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control form-control-sm" id="inputCaseWorkerPhone">
+                </div>
+            </div>
+
+            <div class="border-top my-3"></div>
+
+            <div class="form-group row">
+                <label for="inputSupervisorName" class="col-sm-2 col-form-label">Name of Supervisor</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputSupervisorName">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputSupervisorEmail" class="col-sm-2 col-form-label">Supervisor Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control form-control-sm" id="inputSupervisorName">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputSupervisorPhone" class="col-sm-2 col-form-label">Supervisor Phone #</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control form-control-sm" id="inputSupervisorPhone">
+                </div>
+            </div>
+
+            <div class="border-top my-3"></div>
+
+            <div class="form-group row">
+                <label for="inputAgency" class="col-sm-2 col-form-label">Agency</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputAgency">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputAgencyAddress" class="col-sm-2 col-form-label">Agency Address</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputAgencyAddress">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputAgencyCity" class="col-sm-2 col-form-label">Agency City</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputAgencyCity">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputAgencyState" class="col-sm-2 col-form-label">Agency State</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputAgencyState">
+                </div>
+            </div>
 
 
-                <div class="input-group mb-3 input-group-sm">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Upload</span>
+            <div class="form-group row">
+                <label for="inputAgencyPhone" class="col-sm-2 col-form-label">Agency Phone #</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control form-control-sm" id="inputAgencyPhone">
+                </div>
+            </div>
+
+
+            <div class="border-top my-3"></div>
+
+            <div class="row justify-content-center" style="margin-top: 10px;" id='section2'>
+                <h4>Section II</h4>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputReferredMemberName" class="col-sm-2 col-form-label">Referred Member #1</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputReferredMemberName">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmergency" class="col-sm-2 col-form-label">Gender</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="M">
+                        <label class="form-check-label" for="inputGenderM">M</label>
                     </div>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="F">
+                        <label class="form-check-label" for="inputGenderF">F</label>
                     </div>
-                </div>
-
-                {{!-- TODO: Add Additional Default Attachments --}}
-
-                <div class="row justify-content-center">
-                    <button type="button" class="btn btn-secondary btn-sm">Add Additional Attachment</button>
-                </div>
-
-                <div class="border-top my-3"></div>
-
-                <div class="row justify-content-center">
-                    <h4>Section I</h4>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputPatientName" class="col-sm-2 col-form-label">Patient Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control  form-control-sm" id="inputPatientName">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputDateOfLastAbuseContact" class="col-sm-2 col-form-label">Date of Last
-                        Abuse/Contact</label>
-                    <div class="col-sm-10">
-                        <input type="date" class="form-control form-control-sm" id="inputDateOfLastAbuseContact">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputEmergency" class="col-sm-2 col-form-label">Emergency</label>
-                    <div class="col-sm-10">
-                        <div class="form-check form-check-inline  form-control-sm">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="Yes">
-                            <label class="form-check-label" for="inputEmergencyYes">Yes</label>
-                        </div>
-                        <div class="form-check form-check-inline  form-control-sm">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="No">
-                            <label class="form-check-label" for="inputEmergencyNo">No</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputPatientStatus" class="col-sm-2 col-form-label">Status</label>
-                    <div class="col-sm-10">
-                        <select class="form-control form-control-sm">
-                            <option>Option1</option>
-                            <option>Option2</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputDateOfLastAbuseContact" class="col-sm-2 col-form-label">Today's Date</label>
-                    <div class="col-sm-10">
-                        <input type="date" class="form-control  form-control-sm" id="inputDateToday">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputEmergency" class="col-sm-2 col-form-label">Type of Abuse</label>
-                    <div class="col-sm-10">
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Neglect">
-                            <label class="form-check-label" for="inlineCheckbox1">Neglect</label>
-                        </div>
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Sexual Abuse">
-                            <label class="form-check-label" for="inlineCheckbox2">Sexual Abuse</label>
-                        </div>
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Institutional Abuse">
-                            <label class="form-check-label" for="inlineCheckbox3">Institutional Abuse</label>
-                        </div>
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Physical Abuse">
-                            <label class="form-check-label" for="inlineCheckbox4">Physical Abuse</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputEmergency" class="col-sm-2 col-form-label">Evaluations Request</label>
-                    <div class="col-sm-10">
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Psychological">
-                            <label class="form-check-label" for="inlineCheckbox1">Psychological</label>
-                        </div>
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Forensic">
-                            <label class="form-check-label" for="inlineCheckbox2">Forensic</label>
-                        </div>
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Medical">
-                            <label class="form-check-label" for="inlineCheckbox3">Medical</label>
-                        </div>
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Parenting">
-                            <label class="form-check-label" for="inlineCheckbox4">Parenting</label>
-                        </div>
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Neuropsychological">
-                            <label class="form-check-label" for="inlineCheckbox5">Neuropsychological</label>
-                        </div>
-                        <div class="form-check form-check-inline form-control-sm">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Medical Consult">
-                            <label class="form-check-label" for="inlineCheckbox6">Medical Consult</label>
-                        </div>
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="Other">
+                        <label class="form-check-label" for="inputGenderOther">Other</label>
                     </div>
                 </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputReferredMemberNameDOB" class="col-sm-2 col-form-label">Date of Birth</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control  form-control-sm" id="inputReferredMemberDOB">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputReferredMemberSSN" class="col-sm-2 col-form-label">SSN</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputReferredMemberSSN">
+                </div>
+            </div>
 
 
-                <div class="border-top my-3"></div>
+            <div class="form-group row">
+                <label for="inputReferredMemberAddress" class="col-sm-2 col-form-label">Address</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputReferredMemberAddress">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputReferredMemberCity" class="col-sm-2 col-form-label">City</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputReferredMemberCity">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputReferredMemberState" class="col-sm-2 col-form-label">State</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputReferredMemberState">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputReferredMemberLivesWith" class="col-sm-2 col-form-label">Lives With</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputReferredMemberLivesWith">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-secondary btn-sm">Add Additional Member</button>
+            </div>
 
 
-                <div class="form-group row">
-                    <label for="inputCaseWorkerName" class="col-sm-2 col-form-label">Case Worker Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control  form-control-sm" id="inputCaseWorkerName">
+            <div class="border-top my-3"></div>
+
+            <div class="row justify-content-center" style="margin-top: 10px;" id='section3'>
+                <h4>Section III</h4>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Primary Language</label>
+                <label for="inputLanguageSpokenParent" class="col-sm-1 col-form-label">Parent</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="inputLanguageSpokenParent">
+                </div>
+                <label for="inputLanguageSpokenChild" class="col-sm-1 col-form-label">Child</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-sm" id="inputLanguageSpokenChild">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputLegalGuardianName" class="col-sm-2 col-form-label">Legal Guardian Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputLegalGuardianName">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputLegalGuardianRelationship" class="col-sm-2 col-form-label">Legal Guardian's
+                    Relationship to Child</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm" id="inputLegalGuardianRelationship">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputSeen" class="col-sm-2 col-form-label">Has the child been seen medically or
+                    psycologically for this current disclosure?</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="Yes">
+                        <label class="form-check-label" for="inputSeenYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="No">
+                        <label class="form-check-label" for="inputSeenyNo">No</label>
                     </div>
                 </div>
+            </div>
 
-                <div class="form-group row">
-                    <label for="inputCaseWorkerPhone" class="col-sm-2 col-form-label">Case Worker Phone #</label>
-                    <div class="col-sm-10">
-                        <input type="tel" class="form-control form-control-sm" id="inputCaseWorkerPhone">
-                    </div>
+            <div class="form-group row">
+                <label for="inputLegalGuardianName" class="col-sm-2 col-form-label">If so, when and where?</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
                 </div>
+            </div>
 
-                <div class="border-top my-3"></div>
+            <div class="border-top my-3"></div>
 
-                <div class="form-group row">
-                    <label for="inputSupervisorName" class="col-sm-2 col-form-label">Name of Supervisor</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputSupervisorName">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputSupervisorEmail" class="col-sm-2 col-form-label">Supervisor Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control form-control-sm" id="inputSupervisorName">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputSupervisorPhone" class="col-sm-2 col-form-label">Supervisor Phone #</label>
-                    <div class="col-sm-10">
-                        <input type="tel" class="form-control form-control-sm" id="inputSupervisorPhone">
-                    </div>
-                </div>
-
-                <div class="border-top my-3"></div>
-
-                <div class="form-group row">
-                    <label for="inputAgency" class="col-sm-2 col-form-label">Agency</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputAgency">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputAgencyAddress" class="col-sm-2 col-form-label">Agency Address</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputAgencyAddress">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputAgencyCity" class="col-sm-2 col-form-label">Agency City</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputAgencyCity">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputAgencyState" class="col-sm-2 col-form-label">Agency State</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputAgencyState">
-                    </div>
-                </div>
-
-
-                <div class="form-group row">
-                    <label for="inputAgencyPhone" class="col-sm-2 col-form-label">Agency Phone #</label>
-                    <div class="col-sm-10">
-                        <input type="tel" class="form-control form-control-sm" id="inputAgencyPhone">
-                    </div>
-                </div>
-
-
-                <div class="border-top my-3"></div>
-
-                <div class="row justify-content-center" style="margin-top: 10px;" id='section2'>
-                    <h4>Section II</h4>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputReferredMemberName" class="col-sm-2 col-form-label">Referred Member #1</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputReferredMemberName">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputEmergency" class="col-sm-2 col-form-label">Gender</label>
-                    <div class="col-sm-10">
-                        <div class="form-check form-check-inline  form-control-sm">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="M">
-                            <label class="form-check-label" for="inputGenderM">M</label>
-                        </div>
-                        <div class="form-check form-check-inline  form-control-sm">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="F">
-                            <label class="form-check-label" for="inputGenderF">F</label>
-                        </div>
-                        <div class="form-check form-check-inline  form-control-sm">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                value="Other">
-                            <label class="form-check-label" for="inputGenderOther">Other</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputReferredMemberNameDOB" class="col-sm-2 col-form-label">Date of Birth</label>
-                    <div class="col-sm-10">
-                        <input type="date" class="form-control  form-control-sm" id="inputReferredMemberDOB">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputReferredMemberSSN" class="col-sm-2 col-form-label">SSN</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputReferredMemberSSN">
-                    </div>
-                </div>
-
-
-                <div class="form-group row">
-                    <label for="inputReferredMemberAddress" class="col-sm-2 col-form-label">Address</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputReferredMemberAddress">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputReferredMemberCity" class="col-sm-2 col-form-label">City</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputReferredMemberCity">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputReferredMemberState" class="col-sm-2 col-form-label">State</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputReferredMemberState">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputReferredMemberLivesWith" class="col-sm-2 col-form-label">Lives With</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputReferredMemberLivesWith">
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <button type="button" class="btn btn-secondary btn-sm">Add Additional Member</button>
-                </div>
-
-
-                <div class="border-top my-3"></div>
-
-                <div class="row justify-content-center" style="margin-top: 10px;" id='section3'>
-                    <h4>Section III</h4>
-                </div>
-
-                <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Primary Language</label>
-                    <label for="inputLanguageSpokenParent" class="col-sm-1 col-form-label">Parent</label>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control form-control-sm" id="inputLanguageSpokenParent">
-                    </div>
-                    <label for="inputLanguageSpokenChild" class="col-sm-1 col-form-label">Child</label>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control form-control-sm" id="inputLanguageSpokenChild">
-                    </div>
-                </div>
-
-
-                <div class="form-group row">
-                    <label for="inputLegalGuardianName" class="col-sm-2 col-form-label">Legal Guardian Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputLegalGuardianName">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputLegalGuardianRelationship" class="col-sm-2 col-form-label">Legal Guardian's
-                        Relationship to Child</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control form-control-sm" id="inputLegalGuardianRelationship">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputSeen" class="col-sm-2 col-form-label">Has the child been seen medically or
-                        psycologically for this current disclosure?</label>
-                    <div class="col-sm-10">
-                        <div class="form-check form-check-inline  form-control-sm">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="Yes">
-                            <label class="form-check-label" for="inputSeenYes">Yes</label>
-                        </div>
-                        <div class="form-check form-check-inline  form-control-sm">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="No">
-                            <label class="form-check-label" for="inputSeenyNo">No</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="inputLegalGuardianName" class="col-sm-2 col-form-label">If so, when and where?</label>
-                    <div class="col-sm-10">
-                        <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
-                    </div>
-                </div>
-
-                <div class="border-top my-3"></div>
-
-                <div class="row justify-content-center" style="margin-top: 10px;" id='section4'>
-                    <h4>Section IV</h4>
-                </div>
+            <div class="row justify-content-center" style="margin-top: 10px;" id='section4'>
+                <h4>Section IV</h4>
+            </div>
 
 
 
-                <div class="border-top my-3"></div>
+            <div class="border-top my-3"></div>
 
-                <div class="row justify-content-center" style="margin-top: 10px;" id='section5'>
-                    <h4>Section V</h4>
-                </div>
+            <div class="row justify-content-center" style="margin-top: 10px;" id='section5'>
+                <h4>Section V</h4>
+            </div>
 
 
 
-                {{!-- <div class="row justify-content-center">
+            {{!-- <div class="row justify-content-center">
                     <button type="submit" class="btn btn-secondary">Submit</button>
                 </div> --}}
-            </form>
-
-
-        </div>
+        </form>
 
 
     </div>
+
+
 </div>

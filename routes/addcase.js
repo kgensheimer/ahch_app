@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 // stylesheets sent to layout.hbs
-var stylesheets = [
+const stylesheets = [
   { stylesheet: '/stylesheets/simple-sidebar.css' }];
 
 
