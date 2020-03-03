@@ -1,27 +1,88 @@
+:root {
+  --main-bg-color: rgba(236,203,217, 0.80);
+  --main-txt-color: blue;
+  --main-padding: 15px;
+  --main-body-font-family: 'Vollkorn', Georgia, Times, serif;
+  --main-heading-font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+
+}
+
+body {
+  /* padding: 50px; */
+  font-family: var(--main-body-font-family);
+  font-size: 20px;
+  line-height: 25px;
+  background: url(/images/memphis-colorful2.png) repeat 0 0;
+  padding-top: 57px;
+}
+
+
 h1 {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-family: var(--main-heading-font-family);
   font-size: 50px;
   line-height: 65px;
   text-shadow: 1px 1px 1px #ccc;
 }
 
 h2 {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-family: var(--main-body-font-family);
+  font-weight: bolder;
   font-size: 40px;
   line-height: 55px;
 }
 
 h3 {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-family: var(--main-heading-font-family);
   font-size: 35px;
   line-height: 45px;
 }
 
 h4 {
-  font-family: 'Vollkorn', Georgia, Times, serif;
+  font-family: var(--main-body-font-family);
   font-size: 25px;
   line-height: 35px;
   font-weight: 800;
+}
+
+table.table-hover {
+  border:2px #3C4F76;
+  background-color: var(--main-bg-color);  
+}
+table.table-hover > thead > tr > th{
+  border:2px #3C4F76;
+}
+table.table-hover > tbody > tr > td{
+  border:2px #3C4F76;
+
+}
+
+table.table-hover > tbody > tr > th{
+  border:2px #3C4F76;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  /*height: 70%;*/
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+.tableFixedHeader{ 
+  overflow-y: auto; 
+  height: 575px;                            /*Home page table height   ---- edit this ------*/
+}
+
+.tableFixedHeader thead th { 
+  position: sticky; 
+  top: 0;
+  background-color:  rgba(236,203,217, 0.98);              /*Home page table header color*/
+}
+
+#calendarCol {
+  background: var(--main-bg-color);
 }
 
 p, label {
@@ -29,15 +90,6 @@ p, label {
   font-size: 20px;
   line-height: 25px;
   /* background-color: #F0DBFF; */
-}
-
-body {
-  /* padding: 50px; */
-  font-family: 'Vollkorn', Georgia, Times, serif;
-  font-size: 20px;
-  line-height: 25px;
-  background: url(/images/pink_rice.png) repeat 0 0;
-  padding-top: 50px;
 }
   
 
