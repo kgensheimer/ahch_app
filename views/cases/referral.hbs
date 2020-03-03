@@ -1,3 +1,75 @@
-<div>
-    Referral
-</div>
+<div class="d-flex" id="wrapper">
+
+    <!-- Page Content -->
+
+    <div class="container-fluid" id="page-content-wrapper">
+
+        <div class="row justify-content-center" style="margin-top: 10px;" id="section1">
+            <h4>Referrals</h4>
+        </div>
+        <div class='input-form justify-content-center needs-validation' novalidate>
+            <form>
+                <div class="form-group">
+                    <div class="form-inline">
+                    <label for="inputFamilyName">Family Name </label>
+                        <input type="text" class="form-control  form-control mx-sm-4" id="inputFamilyName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputReferralReason">What is the reason for the referral?</label>
+                        <textarea class="form-control form-control-lg" aria-label="With textarea"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputReferralReason">What questions do you hope to answer through this evaluation?</label>
+                        <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="button" class="btn btn-secondary">Add Another Question</button>
+                </div>
+
+                <!-- yes/no disclosure -->
+                <div class="form-group">
+                    <label for="booleanDisclosure">Was there disclosure?</label>
+                        <select>
+                            <option value="" selected disabled>Yes/No</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                </div>
+
+                <!-- if yes... text box -->
+
+                <div class="form-group">
+                    <label for="inputReferralReason">If yes, what was the disclosure? Please provide circumstances of disclosure (how, when, where, to whom)?</label>
+                        <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+
+                <!-- yesy/no interview -->
+                <div class="form-group">
+                    <label for="booleanDisclosure">Was the child interviewed?</label>
+                        <select>
+                            <option value="" selected disabled>Yes/No</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select>
+                </div>
+
+                <!-- if yes... text box -->
+                <div class="form-group">
+                    <label for="inputReferralReason">If yes, by whom and when? What statements were made by the child?</label>
+                        <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+
+                <!-- perpatrator text box -->
+                <div class="form-group">
+                    <label for="inputReferralReason">Where is the perpatrator located now and has he/she been charged?</label>
+                        <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
