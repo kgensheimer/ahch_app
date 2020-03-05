@@ -11,3 +11,7 @@ a {
 .input-form {
   position: relative;
 }
+
+.section-label {
+ margin-top: 10px;
+}

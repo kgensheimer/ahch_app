@@ -14,7 +14,7 @@
 <div class="container" id="page-content-wrapper">
 
     <div class="row justify-content-center" id="section1">
-        <h4>Intake Form</h4>
+        <h2>Intake Form</h2>
     </div>
 
     {{!-- TODO: Figure out how to center this, add required fields --}}
@@ -48,7 +48,7 @@
 
             <div class="input-group mb-3 input-group-sm">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">Upload</span>
+                    <span class="input-group-text">DYFS 9-7</span>
                 </div>
                 <div class="custom-file">
                     <input type="file" class="custom-file-input" id="inputGroupFile01">
@@ -56,12 +56,66 @@
                 </div>
             </div>
 
+            <div class="input-group mb-3 input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Case Assessment Parts I-IV</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                </div>
+            </div>
+
+            <div class="input-group mb-3 input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">DYFS Form 26-81</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile03">
+                    <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                </div>
+            </div>
+
+            <div class="input-group mb-3 input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Verified Complaint</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile04">
+                    <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                </div>
+            </div>
+
+            <div class="input-group mb-3 input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Court Orders</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile05">
+                    <label class="custom-file-label" for="inputGroupFile05">Choose file</label>
+                </div>
+            </div>
+
+            <div class="input-group mb-3 input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Safety Assessment</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile06">
+                    <label class="custom-file-label" for="inputGroupFile06">Choose file</label>
+                </div>
+            </div>
+
+
+
             {{!-- TODO: Add Additional Default Attachments --}}
 
             <div class="row justify-content-center">
                 <button type="button" class="btn btn-secondary btn-sm">Add Additional Attachment</button>
             </div>
 
+
+            {{!------------------- SECTION 1 -------------------}}
             <div class="border-top my-3"></div>
 
             <div class="row justify-content-center">
@@ -87,14 +141,14 @@
                 <label for="inputEmergency" class="col-sm-2 col-form-label">Emergency</label>
                 <div class="col-sm-10">
                     <div class="form-check form-check-inline  form-control-sm">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioEmergencyYes"
                             value="Yes">
-                        <label class="form-check-label" for="inputEmergencyYes">Yes</label>
+                        <label class="form-check-label" for="radioEmergencyYes">Yes</label>
                     </div>
                     <div class="form-check form-check-inline  form-control-sm">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioEmergencyNo"
                             value="No">
-                        <label class="form-check-label" for="inputEmergencyNo">No</label>
+                        <label class="form-check-label" for="radioEmergencyNo">No</label>
                     </div>
                 </div>
             </div>
@@ -103,38 +157,41 @@
                 <label for="inputPatientStatus" class="col-sm-2 col-form-label">Status</label>
                 <div class="col-sm-10">
                     <select class="form-control form-control-sm">
-                        <option>Option1</option>
-                        <option>Option2</option>
+                        <option hidden>Select...</option>
+                        <option>Attended</option>
+                        <option>Scheduled</option>
+                        <option>Cancelled</option>
+                        <option>Missed</option>
                     </select>
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="inputDateOfLastAbuseContact" class="col-sm-2 col-form-label">Today's Date</label>
+                <label for="inputDateToday" class="col-sm-2 col-form-label">Today's Date</label>
                 <div class="col-sm-10">
                     <input type="date" class="form-control  form-control-sm" id="inputDateToday">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="inputEmergency" class="col-sm-2 col-form-label">Type of Abuse</label>
+                <label for="inputAbuseType" class="col-sm-2 col-form-label">Type of Abuse</label>
                 <div class="col-sm-10">
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Neglect">
-                        <label class="form-check-label" for="inlineCheckbox1">Neglect</label>
+                        <input class="form-check-input" type="checkbox" id="checkAbuseNeglect" value="Neglect">
+                        <label class="form-check-label" for="checkAbuseNeglect">Neglect</label>
                     </div>
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Sexual Abuse">
-                        <label class="form-check-label" for="inlineCheckbox2">Sexual Abuse</label>
+                        <input class="form-check-input" type="checkbox" id="checkAbuseSexual" value="Sexual Abuse">
+                        <label class="form-check-label" for="checkAbuseSexual">Sexual Abuse</label>
                     </div>
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                        <input class="form-check-input" type="checkbox" id="checkAbuseInstitutional"
                             value="Institutional Abuse">
-                        <label class="form-check-label" for="inlineCheckbox3">Institutional Abuse</label>
+                        <label class="form-check-label" for="checkAbuseInstitutional">Institutional Abuse</label>
                     </div>
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Physical Abuse">
-                        <label class="form-check-label" for="inlineCheckbox4">Physical Abuse</label>
+                        <input class="form-check-input" type="checkbox" id="checkAbusePhysical" value="Physical Abuse">
+                        <label class="form-check-label" for="checkAbusePhysical">Physical Abuse</label>
                     </div>
                 </div>
             </div>
@@ -143,28 +200,30 @@
                 <label for="inputEmergency" class="col-sm-2 col-form-label">Evaluations Request</label>
                 <div class="col-sm-10">
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Psychological">
-                        <label class="form-check-label" for="inlineCheckbox1">Psychological</label>
+                        <input class="form-check-input" type="checkbox" id="checkEvalPsychological"
+                            value="Psychological">
+                        <label class="form-check-label" for="checkEvalPsychological">Psychological</label>
                     </div>
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Forensic">
-                        <label class="form-check-label" for="inlineCheckbox2">Forensic</label>
+                        <input class="form-check-input" type="checkbox" id="checkEvalForensic" value="Forensic">
+                        <label class="form-check-label" for="checkEvalForensic">Forensic</label>
                     </div>
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Medical">
-                        <label class="form-check-label" for="inlineCheckbox3">Medical</label>
+                        <input class="form-check-input" type="checkbox" id="checkEvalMedical" value="Medical">
+                        <label class="form-check-label" for="checkEvalMedical">Medical</label>
                     </div>
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Parenting">
-                        <label class="form-check-label" for="inlineCheckbox4">Parenting</label>
+                        <input class="form-check-input" type="checkbox" id="checkEvalParenting" value="Parenting">
+                        <label class="form-check-label" for="checkEvalParenting">Parenting</label>
                     </div>
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Neuropsychological">
-                        <label class="form-check-label" for="inlineCheckbox5">Neuropsychological</label>
+                        <input class="form-check-input" type="checkbox" id="checkEvalNeuro" value="Neuropsychological">
+                        <label class="form-check-label" for="checkEvalNeuro">Neuropsychological</label>
                     </div>
                     <div class="form-check form-check-inline form-control-sm">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Medical Consult">
-                        <label class="form-check-label" for="inlineCheckbox6">Medical Consult</label>
+                        <input class="form-check-input" type="checkbox" id="checkEvalMedConsult"
+                            value="Medical Consult">
+                        <label class="form-check-label" for="checkEvalMedConsult">Medical Consult</label>
                     </div>
                 </div>
             </div>
@@ -199,7 +258,7 @@
             <div class="form-group row">
                 <label for="inputSupervisorEmail" class="col-sm-2 col-form-label">Supervisor Email</label>
                 <div class="col-sm-10">
-                    <input type="email" class="form-control form-control-sm" id="inputSupervisorName">
+                    <input type="email" class="form-control form-control-sm" id="inputSupervisorEmail">
                 </div>
             </div>
 
@@ -249,9 +308,10 @@
             </div>
 
 
-            <div class="border-top my-3"></div>
+            {{!------------------- SECTION 2 -------------------}}
+            <div class="border-top my-3" id='section2'></div>
 
-            <div class="row justify-content-center" style="margin-top: 10px;" id='section2'>
+            <div class="row justify-content-center">
                 <h4>Section II</h4>
             </div>
 
@@ -266,17 +326,17 @@
                 <label for="inputEmergency" class="col-sm-2 col-form-label">Gender</label>
                 <div class="col-sm-10">
                     <div class="form-check form-check-inline  form-control-sm">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputGenderM"
                             value="M">
                         <label class="form-check-label" for="inputGenderM">M</label>
                     </div>
                     <div class="form-check form-check-inline  form-control-sm">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputGenderF"
                             value="F">
                         <label class="form-check-label" for="inputGenderF">F</label>
                     </div>
                     <div class="form-check form-check-inline  form-control-sm">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputGenderOther"
                             value="Other">
                         <label class="form-check-label" for="inputGenderOther">Other</label>
                     </div>
@@ -331,19 +391,21 @@
             </div>
 
 
-            <div class="border-top my-3"></div>
 
-            <div class="row justify-content-center" style="margin-top: 10px;" id='section3'>
+            {{!------------------- SECTION 3 -------------------}}
+            <div class="border-top my-3" id='section3'></div>
+
+            <div class="row justify-content-center">
                 <h4>Section III</h4>
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Primary Language</label>
-                <label for="inputLanguageSpokenParent" class="col-sm-1 col-form-label">Parent</label>
+                <label class="col-sm-12 col-form-label">Primary Language</label>
+                <label for="inputLanguageSpokenParent" class="col-sm-2 col-form-label">Parent:</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control form-control-sm" id="inputLanguageSpokenParent">
                 </div>
-                <label for="inputLanguageSpokenChild" class="col-sm-1 col-form-label">Child</label>
+                <label for="inputLanguageSpokenChild" class="col-sm-2 col-form-label">Child:</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control form-control-sm" id="inputLanguageSpokenChild">
                 </div>
@@ -351,67 +413,231 @@
 
 
             <div class="form-group row">
-                <label for="inputLegalGuardianName" class="col-sm-2 col-form-label">Legal Guardian Name</label>
-                <div class="col-sm-10">
+                <label for="inputLegalGuardianName" class="col-sm-12 col-form-label">Legal Guardian Name</label>
+                <div class="col-sm-12">
                     <input type="text" class="form-control form-control-sm" id="inputLegalGuardianName">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="inputLegalGuardianRelationship" class="col-sm-2 col-form-label">Legal Guardian's
+                <label for="inputLegalGuardianRelationship" class="col-sm-12 col-form-label">Legal Guardian's
                     Relationship to Child</label>
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                     <input type="text" class="form-control form-control-sm" id="inputLegalGuardianRelationship">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="inputSeen" class="col-sm-2 col-form-label">Has the child been seen medically or
-                    psycologically for this current disclosure?</label>
-                <div class="col-sm-10">
+                <label for="inputSeen" class="col-sm-12 col-form-label">Has the child been seen medically or
+                    psychologically for this current disclosure?</label>
+                <div class="col-sm-12">
                     <div class="form-check form-check-inline  form-control-sm">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputSeenYes"
                             value="Yes">
                         <label class="form-check-label" for="inputSeenYes">Yes</label>
                     </div>
                     <div class="form-check form-check-inline  form-control-sm">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputSeenNo"
                             value="No">
-                        <label class="form-check-label" for="inputSeenyNo">No</label>
+                        <label class="form-check-label" for="inputSeenNo">No</label>
                     </div>
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="inputLegalGuardianName" class="col-sm-2 col-form-label">If so, when and where?</label>
-                <div class="col-sm-10">
+                <label for="inputLegalGuardianName" class="col-sm-12 col-form-label">If so, when and where?</label>
+                <div class="col-sm-12">
                     <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
                 </div>
             </div>
 
-            <div class="border-top my-3"></div>
+            <div class="form-group row">
+                <label for="inputFamilyName" class="col-sm-12 col-form-label">Family Name</label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control form-control-sm" id="inputFamilyName">
+                </div>
+            </div>
 
-            <div class="row justify-content-center" style="margin-top: 10px;" id='section4'>
+
+
+            {{!------------------- SECTION 4 -------------------}}
+            <div class="border-top my-3" id='section4'></div>
+
+            <div class="row justify-content-center">
                 <h4>Section IV</h4>
             </div>
 
+            <div class="form-group row">
+                <label for="inputReferralReason" class="col-sm-12 col-form-label">What is the reason for the
+                    referral?</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
 
+            <div class="form-group row">
+                <label for="inputQuestions" class="col-sm-12 col-form-label">What questions do you hope to answer
+                    through
+                    this evauluation?</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
 
-            <div class="border-top my-3"></div>
+            <div class="form-group row">
+                <label for="inputHadDisclosure" class="col-sm-12 col-form-label">Was there a disclosure?</label>
+                <div class="col-sm-12">
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputDisclosureYes"
+                            value="Yes">
+                        <label class="form-check-label" for="inputDisclosureYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputDisclosureNo"
+                            value="No">
+                        <label class="form-check-label" for="inputDisclosureNo">No</label>
+                    </div>
+                </div>
+            </div>
 
-            <div class="row justify-content-center" style="margin-top: 10px;" id='section5'>
-                <h4>Section V</h4>
+            <div class="form-group row">
+                <label for="inputHadDisclosure" class="col-sm-12 col-form-label">If yes, what was the
+                    disclosure?</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputDisclosureCircumstances" class="col-sm-12 col-form-label">Please provide circumstances
+                    of the
+                    disclosure. (How, when, where, and to whom)</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputInterviewed" class="col-sm-12 col-form-label">Was the child interviewed?</label>
+                <div class="col-sm-12">
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputInterviewYes"
+                            value="Yes">
+                        <label class="form-check-label" for="inputInterviewYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline  form-control-sm">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputInterviewNo"
+                            value="No">
+                        <label class="form-check-label" for="inputInterviewNo">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputInterviewer" class="col-sm-12 col-form-label">If yes, by whom and when?</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputInterviewStatements" class="col-sm-12 col-form-label">Statements made by child during
+                    interview</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputPerpetratorInfo" class="col-sm-12 col-form-label">Where is the perpetrator located now
+                    and has he/she been charged?</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
             </div>
 
 
+            {{!------------------- SECTION 5 -------------------}}
+            <div class="border-top my-3" id='section5'></div>
 
-            {{!-- <div class="row justify-content-center">
-                    <button type="submit" class="btn btn-secondary">Submit</button>
-                </div> --}}
+            <div class="row justify-content-center">
+                <h4>Section V</h4>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputDYFSInvolvement" class="col-sm-12 col-form-label">Previous DYFS Involvement with
+                    family:</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputOtherHistory" class="col-sm-12 col-form-label">Other pertinent history and/or specific
+                    issue:</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputBehavior" class="col-sm-12 col-form-label">Sexualized behaviours and/or behavior
+                    changes?</label>
+                <div class="col-sm-12">
+                    <textarea class="form-control form-control-sm" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-12 col-form-label">Previous Evaluations Completed</label>
+
+                <label class="col-sm-1 col-form-label">Type</label>
+                <div class="col-sm-2">
+                    <select class="form-control form-control-sm">
+                        <option hidden>Select...</option>
+                        <option>Psychological</option>
+                        <option>Forensic</option>
+                        <option>Medical</option>
+                        <option>Parenting</option>
+                        <option>Neuropsychological</option>
+                        <option>Medical Consult</option>
+                    </select>
+                </div>
+
+                <label class="col-sm-1 col-form-label">Date</label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control  form-control-sm" id="inputPreviousEvalDate1">
+                </div>
+
+
+                <label class="col-sm-2 col-form-label">Completed By</label>
+                <div class="col-sm-3">
+                    <select class="form-control form-control-sm">
+                        {{!-- Insert Staff Members Here --}}
+                        <option hidden>Select...</option>
+                        <option>Staff 1</option>
+                        <option>Staff 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-secondary btn-sm">Add Additional Evaluation</button>
+            </div>
         </form>
-
-
     </div>
+
+
+
+    <div class="border-top my-3"></div>
+
+    <div class="row justify-content-center" style="margin-top: 10px; margin-bottom: 10px;">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+
+
+</div>
 
 
 </div>
