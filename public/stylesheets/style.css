@@ -15,3 +15,11 @@ a {
 .section-label {
  margin-top: 10px;
 }
+
+.tableFixHead          { overflow-y: auto; height: 550px; }
+.tableFixHead thead th { position: sticky; top: 0; }
+
+
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }
