@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+
+    {{!-- Bootstrap core CSS --}}
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+
+    {{!-- Custom styles --}}
+    <link rel='stylesheet' href='/public/css/style.css' />
+    <link rel='stylesheet' href='/public/css/sidebar-menu-cases.css' />
+
+    {{!-- Custom styles sent by routers --}}
+    {{#each stylesheets}}
+    <link rel='stylesheet' href='{{stylesheet}}' />
+    {{/each}}
+
+</head>
+
+<body>
+    {{!-- Navbar --}}
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="main-navbar">
+        <div class="container-fluid"><a class="navbar-brand text-white" href="/">AHCH</a><button data-toggle="collapse"
+                data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li role="presentation" class="nav-item"><a class="nav-link text-white-50" href="/">Home</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="/cases">Cases</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="/admin">Admin</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="/addcase">Add Case</a></li>
+                </ul>
+                <form class="form-inline"><input type="search" class="bg-light form-control form-control-sm"
+                        name="search" placeholder="Search..." autocomplete="off" /></form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="wrapper">
+        {{!-- Sidebar --}}
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li><a href="/cases">Case List</a></li>
+                <li><a href="/cases/caseinfo">Case Info</a></li>
+                <li><a href="/cases/referral">Referral</a></li>
+                <li><a href="/cases/patients">Patients</a></li>
+                <li><a href="/cases/medical">Medical</a></li>
+                <li><a href="/cases/family">Family</a></li>
+                <li><a href="/cases/history">History</a></li>
+                <li><a href="/cases/services">Services</a></li>
+                <li><a href="/cases/staff">Staff</a></li>
+                <li><a href="/cases/mentalhealth">Mental Health</a></li>
+                <li><a href="/cases/recommendation">Recommendation</a></li>
+                <li><a href="/cases/familyrecommendation">Family Recommendation</a></li>
+                <li><a href="/cases/notes">Notes</a></li>
+            </ul>
+        </div>
+
+        {{!-- Main Page Content, Shifts over when window is small --}}
+        <div class="main-content-wrapper">
+            <div class="container">
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+
+
+    {{!-- Bootstrap core JavaScript --}}
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    {{!-- Utilities --}}
+    <script src='/public/js/utilities.js'></script>
+
+    {{!-- Custom scripts sent by routers --}}
+    {{#each scripts}}
+    <script src="{{script}}"></script>
+    {{/each}}
+
+</body>
+
+</html>

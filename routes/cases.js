@@ -1,76 +1,95 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 /* GET cases page */
 router.get('/', function (req, res, next) {
-  res.render('cases', {
-    layout: 'caseslayout'
+  res.render('cases/caselist', {
+    title: 'Case List',
+    layout: 'cases'
   });
 });
 
-router.get('/referral', function (req, res, next) {
+router.get('/caseinfo', function (req, res, next) {
+  res.render('cases/caseinfo', {
+    title: 'Case Info',
+    layout: 'cases'
+  });
+});
+
+router.get('/referral', async (req, res, next) => {
   res.render('cases/referral', {
-    layout: 'caseslayout'
+    title: 'Case Referrals',
+    layout: 'cases'
   });
 });
 
-router.get('/patients', function (req, res, next) {
+router.get('/patients', async (req, res, next) => {
   res.render('cases/patients', {
-    layout: 'caseslayout'
+    title: 'Case Patients',
+    layout: 'cases'
   });
 });
 
-router.get('/medical', function (req, res, next) {
+router.get('/medical', async (req, res, next) => {
   res.render('cases/medical', {
-    layout: 'caseslayout'
+    title: 'Case Medical',
+    layout: 'cases'
   });
 });
 
-router.get('/family', function (req, res, next) {
+router.get('/family', async (req, res, next) => {
   res.render('cases/family', {
-    layout: 'caseslayout'
+    title: 'Case Family',
+    layout: 'cases'
   });
 });
 
-router.get('/history', function (req, res, next) {
-  res.render('cases/family', {
-    layout: 'caseslayout'
+router.get('/history', async (req, res, next) => {
+  res.render('cases/history', {
+    title: 'Case History',
+    layout: 'cases'
   });
 });
 
-router.get('/services', function (req, res, next) {
+router.get('/services', async (req, res, next) => {
   res.render('cases/services', {
-    layout: 'caseslayout'
+    title: 'Case Services',
+    layout: 'cases'
   });
 });
 
-router.get('/staff', function (req, res, next) {
+router.get('/staff', async (req, res, next) => {
   res.render('cases/staff', {
-    layout: 'caseslayout'
+    title: 'Case Staff',
+    layout: 'cases'
   });
 });
 
-router.get('/mentalhealth', function (req, res, next) {
+router.get('/mentalhealth', async (req, res, next) => {
   res.render('cases/mentalhealth', {
-    layout: 'caseslayout'
+    title: 'Case Mental Health',
+    layout: 'cases'
   });
 });
 
-router.get('/recommendation', function (req, res, next) {
+router.get('/recommendation', async (req, res, next) => {
   res.render('cases/recommendation', {
-    layout: 'caseslayout'
+    title: 'Case Recommendation',
+    layout: 'cases'
   });
 });
 
-router.get('/familyrecommendation', function (req, res, next) {
+router.get('/familyrecommendation', async (req, res, next) => {
   res.render('cases/familyrecommendation', {
-    layout: 'caseslayout'
+    title: 'Case Family Recommendation',
+    layout: 'cases'
   });
 });
 
-router.get('/notes', function (req, res, next) {
+router.get('/notes', async (req, res, next) => {
   res.render('cases/notes', {
-    layout: 'caseslayout'
+    title: 'Case Notes',
+    layout: 'cases'
   });
 });
 

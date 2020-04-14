@@ -1,0 +1,1 @@
+document.getElementById('input-date-today').valueAsDate = new Date();

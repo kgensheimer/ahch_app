@@ -1,8 +1,8 @@
 # AHCH Information Management System Web Application
-
 This project is a Stevens senior design project with the goal of creating a new case and information management system for the staff at Audrey Hepburn Children's House at Hackensack University Medical Center.
 
-## Installing & Running
+
+# Installing & Running
 
 First download the code as a zip folder and place where you see fit
 
@@ -21,18 +21,21 @@ npm start
 This starts a server and listens on port 3000 for connections.
 Then, load http://localhost:3000/ in a browser to see the output.
 
-## Folder Structure
+## Folder/File Structure
 
 ```
-package.json; describes the application and its dependencies.
-node_modules/; stores all the dependencies.
+Files:
 app.js; initializes and runs the server.
-routes/; contains all of tje routing scripts.
+package.json; describes the application and its dependencies.
+
+Folders:
+node_modules/; stores all the dependencies.
+routes/; contains all of the routing scripts.
 data/; contains all of the database access modules.
 config/; stores all the configuration settings.
-views/; contains the HTML views and templates.
+views/; contains the HTML/Habdlebars templates and layouts.
 static/; for static assets such as non-dynamic web pages.
-public/; for public assets (stylesheets, images, JS).
+public/; for public assets (stylesheets, images, JS)
 tasks/; contains any setup scripts like seed.js to seed the database
 ```
 
@@ -40,11 +43,10 @@ tasks/; contains any setup scripts like seed.js to seed the database
 
 * **Kyle Gensheimer** 
 
-See also the list of [contributors](https://github.com/kgensheimer/ahch_app/graphs/contributors)
+See also the list of [contributors](https://github.com/kgensheimer/ahch_app_new/graphs/contributors)
 
 ## License
 
 MIT
 
 ## Acknowledgments
-

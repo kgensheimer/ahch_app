@@ -1,0 +1,19 @@
+body {
+    /* background-image: url(../images/background-colorful.png); */
+    /* background-repeat: repeat; */
+    /* background-color:  #cccccc; */
+}
+
+#main-content-wrapper {
+    margin-top: 56px;
+}
+
+#table-case-list {
+    position: relative;
+}
+
+#btn-submit-intake {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}

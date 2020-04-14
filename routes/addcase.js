@@ -1,16 +1,25 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+
+const scripts = [
+  { script: '/public/js/setCurrentDate.js'}];
 
 // stylesheets sent to layout.hbs
-var stylesheets = [
-  { stylesheet: '/stylesheets/simple-sidebar.css' }];
+const stylesheets = [
+  { stylesheet: '/public/css/sidebar-menu-addcase.css' }];
 
 
 /* GET addcase page */
-router.get('/', function(req, res, next) {
+router.get('/', async (req, res, next) => {
   res.render('addcase', {
+    title: 'Add Case',
+    scripts: scripts,
     stylesheets: stylesheets
   });
+});
+
+router.post('/submitIntake', async (req, res) =>{
+  console.log(req.body);
 });
 
 module.exports = router;
