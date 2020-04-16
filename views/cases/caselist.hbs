@@ -14,6 +14,13 @@
             </tr>
         </thead>
         <tbody>
+            {{#each cases}}
+            <tr>
+                <td scope="row">{{this.familyName}}</td>
+                <td>{{this.spiritNumber}}</td>
+                <td>{{this.createdDate}}</td>
+            </tr>
+            {{/each}}
             <tr>
                 <td scope="row">Smith</td>
                 <td>274628</td>

@@ -1,6 +1,6 @@
 const { ObjectId } = require('mongodb');
 
-async function spiritNumberExists(spiritNum) {
+function spiritNumberExists(spiritNum) {
     if (!spiritNum) throw 'You must provide a spirit number to search for';
     if (typeof spiritNum !== 'number') throw 'Spirit number must be of type number';
 }

@@ -1,11 +1,24 @@
 const express = require('express');
 const router = express.Router();
 
+
+
 /* GET cases page */
 router.get('/', function (req, res, next) {
+  let Case = require('../models/case');
+  // let caseList = {};
+
+  Case.findOne({}, (err, cases) => {
+    // caseList = JSON.parse(JSON.stringify(cases));
+    // Object.assign(caseList, cases);
+    // console.log(caseList);
+  });
+
+  // console.log(caseList);
+
   res.render('cases/caselist', {
     title: 'Case List',
-    layout: 'cases'
+    layout: 'cases',
   });
 });
 
