@@ -24,7 +24,16 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 const app = express();
 
 // Bring in Models
+let Patient = require('./models/patient');
+// let p = new Patient();
 
+// p.patientID = 123;
+// p._id = 5e97cf077519c94072eab717;
+
+// Patient.create(p);
+Patient.find({}, (err, patients) => {
+	console.log(patients)
+});
 
 
 // Set Static Public Folder

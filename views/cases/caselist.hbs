@@ -1,39 +1,34 @@
-<!-- Page should pull case information from database and display summary. -->
-
-<div class="row justify-content-center" style="margin-top: 10px;" id="section1">
-    <h3>Case Information</h3>
-</div>
-
+<!-- Page should pull list of cases from database and display summary. -->
 
 <div class="row justify-content-center">
-    <table class="table" style="width:70%;">
-        <tr>
-            <th>NJ Spirit Number</th>
-            <td>#000000</td>
-        </tr>
-        <tr>
-            <th>Family Name</th>
-            <td>Smith</td>
-        </tr>
-        <tr>
-            <th>Case Manager</th>
-            <td>Dr. Pederson</td>
-        </tr>
-        <tr>
-            <th>Case Type</th>
-            <td>[insert type]</td>
-        </tr>
-        <tr>
-            <th>Status</th>
-            <td>Active</td>
-        </tr>
-        <tr>
-            <th>Prosecutor Case Number</th>
-            <td>#000000</td>
-        </tr>
-        <tr>
-            <th>Date Created</th>
-            <td>MM/DD/YYYY</td>
-        </tr>
+    <h3 class="page-title">Case List</h3>
+</div>
+
+<div class="row justify-content-center">
+    <table class="table table-hover case-tab-table" id="table-case-list">
+        <thead>
+            <tr>
+                <th scope="col">Family Name</th>
+                <th scope="col">NJ Spirit #</th>
+                <th scope="col">Date Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Smith</td>
+                <td>274628</td>
+                <td>12/28/2019</td>
+            </tr>
+            <tr>
+                <td scope="row">Jackson</td>
+                <td>583657</td>
+                <td>12/29/2019</td>
+            </tr>
+            <tr>
+                <td scope="row">Jeffrey</td>
+                <td>204618</td>
+                <td>12/27/2019</td>
+            </tr>
+        </tbody>
     </table>
 </div>

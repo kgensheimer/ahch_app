@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const caseFunctions = require('../data/cases');
 
 const scripts = [
-  { script: '/public/js/setCurrentDate.js'}];
+  { script: '/public/js/setCurrentDate.js' }];
 
 // stylesheets sent to layout.hbs
 const stylesheets = [
@@ -18,7 +19,8 @@ router.get('/', async (req, res, next) => {
   });
 });
 
-router.post('/submitIntake', async (req, res) =>{
+router.post('/submitIntake', async (req, res) => {
+  await caseFunctions.addCase(req.body);
   console.log(req.body);
 });
 

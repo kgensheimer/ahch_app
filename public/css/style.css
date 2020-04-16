@@ -4,6 +4,14 @@ body {
     /* background-color:  #cccccc; */
 }
 
+.page-title {
+    margin-top: 10px;
+}
+
+.case-tab-table {
+    width: 70%;
+}
+
 #main-content-wrapper {
     margin-top: 56px;
 }

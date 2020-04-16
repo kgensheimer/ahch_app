@@ -37,6 +37,8 @@ views/; contains the HTML/Habdlebars templates and layouts.
 static/; for static assets such as non-dynamic web pages.
 public/; for public assets (stylesheets, images, JS)
 tasks/; contains any setup scripts like seed.js to seed the database
+models/; contains the mongoose database schema
+data/; contains the functions for the database
 ```
 
 ## Authors

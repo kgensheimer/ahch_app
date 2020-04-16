@@ -2,16 +2,9 @@ let mongoose = require('mongoose');
 
 // Case Schema
 let caseSchema = mongoose.Schema({
-    spiritNumber: {
+    caseID: {
         type: Number,
         required: true
-    },
-    familyName: {
-        type: String,
-        required: true
-    },
-    familyNameSecondary: {
-        type: String
     },
     createdDate: {
         type: Date,
@@ -22,20 +15,30 @@ let caseSchema = mongoose.Schema({
     statusChangeDate: {
         type: Date
     },
-    caseWorkerID: {
-        type: Number
+    caseGUID: {
+        type: String,
+        required: true
     },
-    supervisorID: {
-        type: Number
+    DYFSID: {
+        type: String
     },
-    agencyID: {
+    prosecutorID: {
+        type: String
+    },
+    medicaidID: {
+        type: String
+    },
+    familyName: {
+        type: String
+    },
+    caseManagerID: {
         type: Number
     },
     statusID: {
         type: Number
     },
-    referredMemberID: {
-        type: Number
+    intakeSubmittedDate: {
+        type: Date
     },
     caseTypeID: {
         type: Number
