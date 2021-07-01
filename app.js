@@ -1,12 +1,11 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
-
-
+require('dotenv').config()
 
 // Connect to Database
-const mongoDB = 'mongodb://localhost:27017/ahch';
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+const dbURI = `mongodb+srv://${process.env.DB_HOST}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Get the Default Connection
 let db = mongoose.connection;
