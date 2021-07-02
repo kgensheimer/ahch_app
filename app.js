@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config()
 
 // Connect to Database
-const dbURI = `mongodb+srv://${process.env.DB_HOST}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
+const dbURI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Get the Default Connection
