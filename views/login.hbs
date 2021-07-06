@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="col-md-12">
-                    <form action="/submitLogin" method="POST">
+                    <form action="/login/submitLogin" method="POST">
 
                         {{!----------------- LOGIN INFO ------------------}}
                         <div id="initial-info">
@@ -31,6 +31,12 @@
                                     <input type="text" class="form-control form-control-sm"
                                         id="password" name="password" autocomplete="off" required>
                                 </div>
+                            </div>
+
+                            <div class="form-group row">
+                                {{#if error}}
+                                    {{error}}
+                                {{/if}}
                             </div>
                         
                         </div>

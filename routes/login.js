@@ -12,8 +12,11 @@ router.get('/', async (req, res, next) => {
 });
 
 router.post('/submitLogin/', async (req, res) => {
-  const username = req.body.username
+  console.log(req.body)
+  let username = req.body.username
   const password = req.body.password
+  console.log(username)
+  console.log(password)
 
   if (!username || username.trim().length == 0) {
     return res.status(400).render('login', {
@@ -30,25 +33,31 @@ router.post('/submitLogin/', async (req, res) => {
   }
 
   try {
-    const users = userData.getAll();
+    const users = await userData.getAllUsers();
 
     let user = null;
-    for (i in users) { // search through all users for username
-      if (i.Username == username) {
+    username = username.toLowerCase();
+    console.log(users)
+    for (i of users) { // search through all users for username
+      console.log(i)
+      console.log(i.Username)
+      if (i.Username.toLowerCase() == username) {
         user = i;
         break;
       }
     }
     if (!user) { // if user doesn't exist, error
+      console.log('incorrect username')
       return res.status(400).render('login', {
         title: 'Log In',
         error: 'Username and/or password is incorrect.'
       });
     }
 
-    const comparison = await bcrypt.compare(password, user.password);
+    const comparison = await bcrypt.compare(password, user.Password);
 
     if (!comparison) {
+      console.log('incorrect password')
       return res.status(400).render('login', {
         title: 'Log In',
         error: 'Username and/or password is incorrect.'
@@ -56,9 +65,10 @@ router.post('/submitLogin/', async (req, res) => {
     }
 
     req.session.user = user; // have to change to make cookie secure
-
+    console.log('here')
     return res.redirect('/home'); 
   } catch (e) {
+    console.log(e);
     return res.status(500).render('login', {
       title: 'Log In',
       error: 'A database error occurred. Please try again in a few minutes.'
