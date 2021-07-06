@@ -12,11 +12,8 @@ router.get('/', async (req, res, next) => {
 });
 
 router.post('/submitLogin/', async (req, res) => {
-  console.log(req.body)
   let username = req.body.username
   const password = req.body.password
-  console.log(username)
-  console.log(password)
 
   if (!username || username.trim().length == 0) {
     return res.status(400).render('login', {
@@ -37,10 +34,8 @@ router.post('/submitLogin/', async (req, res) => {
 
     let user = null;
     username = username.toLowerCase();
-    console.log(users)
+
     for (i of users) { // search through all users for username
-      console.log(i)
-      console.log(i.Username)
       if (i.Username.toLowerCase() == username) {
         user = i;
         break;
@@ -65,7 +60,7 @@ router.post('/submitLogin/', async (req, res) => {
     }
 
     req.session.user = user; // have to change to make cookie secure
-    console.log('here')
+
     return res.redirect('/home'); 
   } catch (e) {
     console.log(e);

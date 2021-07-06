@@ -3,44 +3,6 @@ const { get } = require('mongoose');
 const { users } = require('../config/mongoCollections');
 const bcrypt = require('bcryptjs')
 
-
-// let usersSchema = mongoose.Schema({
-//     UserID: {
-//         type: Number
-//     },
-//     Username: {
-//         type: String
-//     },
-//     FirstName: {
-//         type: String
-//     },
-//     MI: {
-//         type: String
-//     },
-//     LastName: {
-//         type: String
-//     },
-//     Password: {
-//         type: String
-//     },
-//     AuthType: {
-//         type: String
-//     },
-//     UserGUID: {
-//         type: String
-//     },
-//     OrganizationID: {
-//         type: Number
-//     },
-//     Notes: {
-//         type: String
-//     },
-//     Role: {
-//         type: String
-//     }
-// });
-
-
 function clean(obj) {
     obj._id = obj._id.toString()
     return obj
