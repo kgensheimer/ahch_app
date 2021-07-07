@@ -1,7 +1,8 @@
 const homeRoutes = require('./home'); 
 const addcaseRoutes = require('./addcase'); 
 const caseRoutes = require('./cases'); 
-const adminRoutes = require('./admin'); 
+const adminRoutes = require('./admin');
+const loginRoutes = require('./login')
 
 const constructorMethod = (app) => {
 
@@ -9,8 +10,7 @@ const constructorMethod = (app) => {
     app.use('/addcase', addcaseRoutes);
     app.use('/cases', caseRoutes);
     app.use('/admin', adminRoutes);
-
-
+    app.use('/login', loginRoutes);
 
     app.use('*', (req, res) => {   
         res.status(404).json({ error: 'Not found' });  

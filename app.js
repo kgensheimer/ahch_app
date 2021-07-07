@@ -1,6 +1,7 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
+const session = require('express-session');
 require('dotenv').config()
 
 // Connect to Database
@@ -21,6 +22,14 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Initialize App
 const app = express();
+
+// Initialize session
+app.use(session({
+	name: "AHCH",
+	secret: "boy it sure would be unfortunate if this string was leaked",
+	resave: false,
+	saveUninitialized: true
+  }));
 
 // Bring in Models
 let Patient = require('./models/patient');

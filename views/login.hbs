@@ -1,0 +1,54 @@
+<div id="wrapper">
+
+
+    {{!-- Main Page Content, Shifts over when window is small --}}
+    <div class="page-content-wrapper">
+        <div class="container">
+            <div class="row">
+
+                <div id="top" class="col-md-12 text-center">
+                    <h2>Login</h2>
+                </div>
+
+                <div class="col-md-12">
+                    <form action="/login/submitLogin" method="POST">
+
+                        {{!----------------- LOGIN INFO ------------------}}
+                        <div id="initial-info">
+
+                            <div class="form-group row">
+                                <label for="username" class="col-sm-3 col-form-label col-form-label-sm">Username</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control form-control-sm" id="username"
+                                        name="username" autocomplete="off" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="password"
+                                    class="col-sm-3 col-form-label col-form-label-sm">Password</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control form-control-sm"
+                                        id="password" name="password" autocomplete="off" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                {{#if error}}
+                                    {{error}}
+                                {{/if}}
+                            </div>
+                        
+                        </div>
+
+                        <div id="btn-submit-intake" class="row justify-content-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
