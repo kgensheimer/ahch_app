@@ -1,3 +1,74 @@
-<div>
-    Staff
+<div class='row justify-content-center' style="margin-top: 10px;">
+    <h3> Staff </h3>
+</div>
+
+<div class='row justify-content-center' style="margin-top: 10px;">
+    <p><strong>Add New Staff Member</strong></p> 
+</div>
+
+<div class='row justify-content-center'>
+      
+    <div class="form-group row">
+        <label for="inputFamilyName" class="col-sm-2 col-form-label">Name &emsp;</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control  form-control-sm" id="inputStaffName" value="Smith Kim">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="input-staff-name" class="col-sm-2 col-form-label">Role</label>
+        <div class="col-sm-8">
+            <select class="form-control form-control-sm" id="input-staff-role"
+                name="staffRole" required>
+                <option hidden value="">Role...</option>
+                <option value="doctor">nurse</option>
+                <option value="nurse">doctor</option>
+                <option value="role3">role3</option>
+                <option value="role4">role4</option>
+            </select>
+        </div>
+    </div>
+    <button type="button" class="btn btn-secondary btn-sm">
+        Add 
+    </button>
+</div>
+
+<div class='row justify-content-center' style="margin-top: 10px;">
+    <p><strong>Add Existing Staff Member</strong></p>  
+</div>
+<div class='row justify-content-center'>
+
+    <div class="form-group row">
+        <label for="input-staff-name" class="col-sm-2 col-form-label">Staff</label>
+        <div class="col-sm-8">
+            <select class="form-control form-control-sm" id="input-staff-role"
+                name="staffRole" required>
+                <option hidden value="">select...</option>
+                <option value="staff 1">staff 1</option>
+                <option value="staff 2">staff 2</option>
+                <option value="staff 3">staff 3</option>
+                <option value="staff 4">staff 4</option>
+            </select>
+        </div>
+    </div>
+    <button type="button" class="btn btn-secondary btn-sm">
+        Add 
+    </button>
+</div>
+
+<div class="row justify-content-center" style="margin-top: 10px;">
+    <table class="table" style="width:70%;">
+        <tr>
+            <th>Worker Name</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>Leah Schild</td>
+            <td>Doctor</td>
+        </tr>
+        <tr>
+            <td>Leah Schild</td>
+            <td>Doctor</td>
+        </tr>
+    </table>
 </div>
